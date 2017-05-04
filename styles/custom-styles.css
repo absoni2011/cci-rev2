@@ -1,0 +1,403 @@
+/*=====  Hide main page content on load to show splash page  ======*/
+/*.navbar, .cci-wrapper, #myCarousel { display: none; }*/
+
+/*=====================================
+=            Global Styles            =
+=====================================*/
+html,
+body { height: 100%; }
+body { font-family: 'News Cycle', sans-serif; font-size: 16px; font-weight: 200; line-height: 20px; color: #515151; padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Questrial', sans-serif; }
+h1 { font-size: 48px; font-weight: 500; color: #000; }
+h2 { font-size: 35px; font-weight: 200; }
+h4 { font-weight: bold; }
+
+h1 small { color: #000 !important; font-weight: 500; }
+
+a:link,
+a:active,
+a:visited { color: #2559c9; }
+a:hover { color: #76cae9; text-decoration: none; }
+
+hr { border-color: #aaa; }
+
+.clear { clear: both; }
+.cci-m-10 { margin-top: 10px; }
+.cci-m-30 { margin-top: 30px; }
+.cci-mission { margin: 50px auto; }
+.cci-font-color-orange { color: #da8044; }
+footer .fa-search { position: absolute; top: 10px; right: 20px; }
+
+.cci-lists { margin: 10px 0; }
+.cci-lists li a { padding-top: 0; }
+
+.cci-link p a { font-weight: bold; font-size: 22px; }
+.cci-link p a:hover { color: green; }
+
+.cci-center-block { float: none; display: block; margin-left: auto; margin-right: auto; }
+.img-hover:hover { opacity: 0.8; }
+.cci-img { margin: 0 auto; }
+.error-404 { font-size: 100px; }
+#map { width: 100%; height: 400px; border: 1px solid black; }
+form .required-astrik { color: #a94442; margin-left: -1px; }
+.btn-black { background: #000; border: 1px solid #000; color: #fff !important; box-shadow: none !important; }
+.btn-black:hover,
+.btn-black:visited,
+.btn-black:focus,
+.btn-black:active { opacity: 0.8; background: #000; border-color: #000; outline: none; }
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+/*=====  End of Global Styles  ======*/
+
+/*=====  Google Search  ======*/
+table.gsc-search-box td.gsc-input { padding-right: 5px !important; }
+table.gsc-search-box td.gsc-input input { padding: 4px !important; width: 100% !important; font-size: 14px !important; }
+
+/*=====  Navigation  ======*/
+nav.navbar { font-family: 'Roboto', sans-serif; font-weight: 200; font-style: normal; }
+.dropdown-menu { border-radius: 0; }
+.dropdown li a:hover { color: #FF9900; }
+.dropdown-submenu { position: relative; }
+.dropdown-submenu>.dropdown-menu { top: 0; left: 100%; width: 100%; margin-top: -6px; }
+.dropdown-submenu:hover>.dropdown-menu { display: block; }
+.dropdown-submenu.CCI-dropdownleft:last-child>.dropdown-menu { top: 0; left: -130%; width: 180px; }
+@media all and ( max-width: 768px ) {
+  .dropdown-submenu:hover>.dropdown-menu { display: none; }
+}
+@media all and ( min-width: 768px ) and ( max-width: 991px) {
+  .navbar-header { display: none; }
+}
+
+
+/*=====  Bootstrap Slider  ======*/
+.carousel-inner .item img { height: 400px; width: 100%; }
+.carousel-caption { background-color: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; left: 0; right: 75%; bottom: 100px; text-align: left; padding: 10px; font-size: 14px; }
+@media all and ( max-width: 991px ) {
+  .carousel-caption { right: 50%; padding: 10px; bottom: 50px; }
+}
+@media all and ( max-width: 768px ) {
+  .carousel-inner .item img { height: 200px; }
+  .carousel-caption { right: 25%; font-size: 12px; }
+}
+
+/*=====  pgwSlideshow slider  ======*/
+.lg-backdrop.in { opacity: 0.8 !important }
+.pgwSlideshow ul { padding: 0; }
+.pgwSlideshow .ps-caption a { color: #fff; font-size: 14px; }
+.pgwSlideshow img { width: 100%; height: 460px; }
+.pgwSlideshow .ps-caption { top: 0; bottom: auto; }
+
+/*=====  Light Gallery slider  ======*/
+#light-gallery img { border: 1px solid #ddd; height: 250px; width: 280px; margin-bottom: 10px; }
+#light-gallery .slider-images span { right: 0; left: 0; bottom: 10px; background-color: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; padding: 25px 15px; text-align: center; width: 280px; margin: 0 auto; }
+@media(max-width: 991px) {
+  #light-gallery .slider-images span { right: 0; left: 0; }
+}
+
+/*=====  Modal  ======*/
+.modal-header { border: none; }
+.modal-header .close { margin-top: -15px; font-size: 50px; outline: none; }
+
+/*=====  Footer  ======*/
+footer { margin: 50px 0 0 0; background: #eee; font-size: 14px; }
+.cci-footer { margin: 50px 0; padding: 20px 0; border-bottom: 1px solid #aaa; margin-bottom: 30px; border-top: 1px solid #aaa; margin-bottom: 20px; }
+.cci-footer-image { width: 135px; }
+.cci-footer .privacy-policy { width: 100px; text-align: center; }
+.cci-footer .nav-links { list-style-type: none; display: inline-block; padding-left: 20px; }
+.cci-footer .nav-links ul { list-style-type: none; padding-left: 12px; }
+@media(min-width: 991px) {
+  .cci-footer .col-md-3 { width: 20%; }
+  .cci-footer-image { margin-left: -20px; }
+}
+@media(max-width: 991px) {
+  .cci-footer-image { margin-left: 25px; }
+  .cci-footer .col-md-1 { text-align: center; }
+  .cci-footer .privacy-policy { width: auto; margin-left: 30px; }
+}
+
+@media(max-width: 480px) {
+  .cci-footer .col-xs-6 { width: 100%; text-align: center; }
+}
+
+/*==== Back to top arrow ====*/
+.back-to-top { position: fixed; bottom: 2em; right: 2px; color: #000; background-color:#ccc; padding: 5px; }
+.back-to-top:hover { text-decoration: none; }
+
+/*==== Contact Form ====*/
+#contactForm [class*='col-'] { padding-left: 0;  }
+
+/*==== Social Media Icons ====*/
+.fa.fa-facebook,
+.fa.fa-twitter,
+.fa.fa-linkedin,
+.fa.fa-google-plus,
+.fa.fa-pinteres,
+.fa.fa-pinterest,
+.fa.fa-youtube,
+.fa.fa-envelope { width: 100%; font-size: 20px; color: #fff; border-radius: 10%; background: #585858; }
+.cci-brand-icons { padding: 0; }
+.cci-brand-icons ul { padding: 0; }
+.cci-brand-icons ul li { display: inline-block; margin: 0 5px 5px 0; }
+.cci-brand-icons a.fa-twitter:hover { background: #58ADEA; }
+.cci-brand-icons a.fa-facebook:hover { background: #3A5795; }
+.cci-brand-icons a.fa-linkedin:hover { background: #00669B; }
+.cci-brand-icons a.fa-google-plus:hover { background:#DC4A3D; }
+.cci-brand-icons a.fa-pinterest:hover { background:#BC2025; }
+.cci-brand-icons a.fa-youtube:hover { background:#E62117; }
+.cci-brand-icons a.fa-envelope:hover { background: #0071C5; }
+@media screen and  ( max-width: 991px ) {
+  .cci-brand-icons.pull-right { float: none !important; }
+}
+
+/*===== Home ======*/
+.cci-home .cci-accuracy-expertise img { height: 180px; width: 300px; }
+.cci-home .learn-more-btn { border-radius: 0; padding: 10px 20px; color: #000 !important; font-weight: bold; border-color: #000; margin-top: 10px; }
+.cci-home .cci-innovation-text ul { margin-left: 20px; }
+.cci-home .cci-innovation-text ul li { margin-top: 15px; }
+
+/*==== About =====*/
+.cci-about .cci-color-history h2 { margin-bottom: 30px; }
+.cci-about .cci-color-history img { border: 1px inset #000; padding: 1px; }
+
+/*===== The CCI Difference ====*/
+.cci-the-difference .text-color { color:#3B81D3; }
+
+/*==== Global Color Experts ====*/
+.cci-global-color-experts .mapimg { border: 1px solid black; }
+.cci-global-color-experts .carousel-map-img { right: 15px; left: 15px; bottom: 0; background-color: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; padding: 25px 15px; text-align: center; }
+.cci-global-color-experts .worldwide a { display: block; position: relative; }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cci-global-color-experts .carousel-map-img { width: calc(100% - 350px); margin: 0 auto; }
+}
+
+/*==== Light and Color Decorative Details ====*/
+.cci-lightcolor { background-color: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; bottom: 41px; left: 182px; height: auto; text-align: center; padding: 10px 5px; font-size: 12px; width: 36%; }
+.cci-lightcolor-image { width:207px; }
+
+/*==== Specialty Color Stains Finishes ====*/
+.cci-image-size { width: 282px; height: 211px; border:2px solid grey; padding:3px; }
+.cci-specialtycolor-image:hover { background-color: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; bottom:0; left:55px; text-align: center; padding: 16px 10px; font-size: 15px; width: 72%;
+  -webkit-transition:all 2s ease-in-out;
+    transition:all 2s ease;
+}
+
+/*==== Fundamental Color Tools ====*/
+.fundamental-color-tools .slider-images span { left: 15px !important; }
+.cci-fundamentalcolor { color: grey; font-size: 15px; }
+
+/*===== Automotive ====*/
+.cci-automotive-oem #myTab a { letter-spacing: 1px; font-weight: bold; letter-spacing: 1px; cursor: pointer; }
+.cci-automotive-oem .tab-content img { border: 1px solid #ddd; }
+.cci-automotive-oem footer { margin-top: 0; }
+@media screen and  ( max-width: 768px ) {
+  .cci-automotive-oem .tab-content img { width: 100% }
+}
+
+/*=====  color-cards  ======*/
+.cci-color-cards #light-gallery .slider-images span { right: 0; left: 13px; bottom: 10px; background-color: rgba(0, 0, 0, 0.5); color: #fff; position: absolute; padding: 25px 15px; text-align: center; width: 282px; margin: 0 auto; }
+
+/*=====  Europe, Australasia, North America, Location  ======*/
+.cci-australasia .carousel-indicators,
+.cci-europe .carousel-indicators,
+.cci-north-america .carousel-indicators,
+.cci-location .carousel-indicators { display: none; }
+
+/*=====  Location  ======*/
+.cci-location #map { border: none; }
+
+/*========= ColorTac ======*/
+.cci-color-tac .pgwSlideshow img { height: 550px; }
+
+/*=====  Color Solutions  ======*/
+.cci-browse-by-industry h4 {
+    text-align: center;
+}
+.cci-browse-by-industry div {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    height: 50%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+.cci-browse-by-industry div img {
+    width: 100%;
+    height: 100%;
+}
+.cci-browse-by-industry div span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    right: 0;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+
+/*===Sitemap====*/
+
+.cci-bullets {
+  list-style-type:circle;
+}
+
+.cci-sitemap {
+  margin-left:20px;
+  list-style-type:square;
+}
+.cci-dropdownlists {
+  margin-left:40px;
+  list-style-type:square;
+}
+
+/*=====  the-art-gallery  ======*/
+#art-color-gallery img {
+  border: 1px solid #ddd;
+  height: 250px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+#art-color-gallery div span {
+  left: 15px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  right: -4px;
+  padding: 25px 15px;
+  text-align: center;
+}
+.col-centered {
+  display: inline-block;
+  position: relative;
+  left: 120px;
+  width: 293px;
+}
+
+
+
+.research-development-image {
+  width:400px;
+  height:435px;
+  margin-left:20px;
+  border:1px solid grey;
+  padding:1px;
+}
+
+.cci-hoverlink-effect a {
+  background-color:black;
+  color:white;
+  padding:16px;
+  font-size:15px;
+  font-weight:bold;
+  width:60%;
+}
+.cci-hoverlink-effect a:hover {
+  background:grey;
+  color:white;
+}
+
+/*=========Innovation Technology======*/
+.cci-innovation-tech .color-production a {
+  position: relative;
+}
+
+.cci-innovation-tech .color-production img {
+  width: 100%;
+  height: 435px;
+  margin-bottom: 10px;
+}
+.cci-innovation-tech .color-production .hover {
+   background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: -206px;       /*TODO: Check here there should be better way to handle this.*/
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.warehousing-services-para {  margin:15px;}
+/*=====  Media Queries  ======*/
+@media screen and ( max-width: 768px ) {
+  .mapimg {
+    margin-top: 15px;
+  }
+
+  .cci-difference-mediaquery {
+    margin-left: 18px;
+  }
+  .cci-browse-by-industry  video {
+    width: 100%;
+    height: auto;
+  }
+  #art-color-gallery img {
+    position: relative;
+    right: 120px;
+  }
+
+  #art-color-gallery div span {
+   position: absolute;
+   bottom: 15px;
+   left: -105px;
+   width: 96%;
+  }
+  .cci-fundamental-mediaquery-img {
+    margin-left: 25px;
+  }
+  .cci-lightcolor-mediaquery video {
+    width: 300px;
+  }
+  .cci-lightcolor {
+    position: absolute;
+    left: 15px;
+    width: 90%;
+  }
+  .cci-lightcolor-image {
+    width: auto;
+  }
+  .cci-equipment-technology-hoverlink a {
+    width: 100%;
+  }
+  .cci-hoverlink-effect a {
+    width: 100%;
+  }
+
+  .cci-font-color-orange {
+    float:left;
+    margin: 10px 30px;
+  }
+  .cci-artcolor-mediaquery-img {
+    margin-left: 135px;
+    width: 100%;
+  }
+  .cci-standards-mediaquery {
+    text-align: center;
+  }
+  .cci-sitemap {
+    margin-left: 60px;
+  }
+  h1 {
+    font-size: 1.52em;
+    font-weight: 700;
+  }
+ h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.4em; }
+
+  h4 {
+    font-size: 1em; }
+
+}

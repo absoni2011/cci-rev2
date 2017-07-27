@@ -1,2 +1,2 @@
 
-[demo link for cci project] (http://KarismaSoni.github.io/CCI-rev1/)
+[demo link for cci project] (http://KarismaSoni.github.io/cci-rev1/)

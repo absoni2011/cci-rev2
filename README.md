@@ -1,2 +1,2 @@
 # cci-rev1
-http://github.karismasoni.io/cci-rev1/
+https://karismasoni.github.io/cci-rev1/

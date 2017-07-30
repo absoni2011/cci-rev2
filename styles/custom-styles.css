@@ -83,6 +83,9 @@ nav.navbar { font-family: 'Roboto', sans-serif; font-weight: 200; font-style: no
   .navbar-header { display: none; }
 }
 
+/* header logo height width adjustment*/
+.header-logo img {width: 50px;; height: 100%}
+
 /* header img new one img only*/
 .header-img img {width: 100%;}
 

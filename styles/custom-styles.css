@@ -73,7 +73,7 @@ nav.navbar { font-family: 'Roboto', sans-serif; font-weight: 200; font-style: no
 .navbar-inverse .navbar-nav>li>a:hover { color:#000000; }
 
 /*header images*/
-header-img { width: 100%; }
+header-img img { width: 100%; }
 
 @media all and ( max-width: 768px ) {
   .dropdown-submenu:hover>.dropdown-menu { display: none; }
